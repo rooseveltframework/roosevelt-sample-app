@@ -1,0 +1,56 @@
+{
+  "port": 52668,
+  "makeBuildArtifacts": true,
+  "https": {
+    "enable": true,
+    "port": 52668,
+    "force": true,
+    "authInfoPath": {
+      "authCertAndKey": {
+        "cert": "./certs/cert.pem",
+        "key": "./certs/key.pem"
+      }
+    }
+  },
+  "modelsPath": "mvc/models",
+  "viewsPath": "mvc/views",
+  "viewEngine": ["html:teddy"],
+  "controllersPath": "mvc/controllers",
+  "css": {
+    "sourcePath": "css",
+    "compiler": {
+      "enable": true,
+      "module": "less",
+      "options": {}
+    },
+    "output": "css",
+    "versionFile": null
+  },
+  "js": {
+    "sourcePath": "js",
+    "webpack": {
+      "enable": true,
+      "bundles": [{
+        "config": {
+          "entry": "${js.sourcePath}/main.js",
+          "devtool": "source-map",
+          "output": {
+            "path": "${publicFolder}/js"
+          },
+          "resolve": {
+            "alias": {
+              "fs": false,
+              "path": false
+            },
+            "modules": ["${js.sourcePath}", "${publicFolder}/js", "${appDir}", "node_modules"]
+          }
+        }
+      }]
+    }
+  },
+  "favicon": "images/favicon.ico",
+  "symlinks": [{
+    "source": "${staticsRoot}/images",
+    "dest": "${publicFolder}/images"
+  }]
+}
