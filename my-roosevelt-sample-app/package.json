@@ -1,0 +1,52 @@
+{
+  "name": "my-roosevelt-sample-app",
+  "description": "",
+  "author": "",
+  "version": "0.1.0",
+  "homepage": "",
+  "license": "",
+  "main": "app.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "roosevelt": "~0.21.0",
+    "teddy": "~0.6.0",
+    "less": "~4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "~3.0.0",
+    "standard": "~17.1.0",
+    "eslint-plugin-html": "~7.1.0",
+    "stylelint": "~15.11.0",
+    "postcss-less": "~6.0.0",
+    "stylelint-config-standard": "~34.0.0"
+  },
+  "nodemonConfig": {
+    "ignore": ["public/", "jsdoc/"],
+    "ext": "less html js json"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://somewhere.url/user/repo.git"
+  },
+  "scripts": {
+    "audit-config": "node ./node_modules/roosevelt/lib/scripts/configAuditor.js",
+    "generate-certs": "node ./node_modules/roosevelt/lib/scripts/certsGenerator.js",
+    "d": "nodemon app.js --development-mode",
+    "dev": "nodemon app.js --development-mode",
+    "development": "nodemon app.js --development-mode",
+    "lint": "npm run standard && npm run stylelint",
+    "p": "nodemon app.js --production-mode",
+    "prod": "nodemon app.js --production-mode",
+    "production": "nodemon app.js --production-mode",
+    "x": "nodemon app.js --production-proxy-mode",
+    "prodproxy": "nodemon app.js --production-proxy-mode",
+    "production-proxy": "nodemon app.js --production-proxy-mode",
+    "standard": "./node_modules/.bin/standard",
+    "start": "nodemon app.js --production-mode",
+    "stylelint": "./node_modules/.bin/stylelint \"statics/css/**/*.less\"",
+    "test": "npm run lint"
+  }
+}
