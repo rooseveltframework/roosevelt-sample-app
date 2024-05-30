@@ -1,17 +1,18 @@
 {
-  "port": 52668,
+  "port": 4770,
   "makeBuildArtifacts": true,
   "https": {
     "enable": true,
-    "port": 52668,
+    "port": 4770,
     "force": true,
     "authInfoPath": {
       "authCertAndKey": {
-        "cert": "./certs/cert.pem",
-        "key": "./certs/key.pem"
+        "cert": "cert.pem",
+        "key": "key.pem"
       }
     }
   },
+  "secretsDir": "secrets",
   "modelsPath": "mvc/models",
   "viewsPath": "mvc/views",
   "viewEngine": ["html:teddy"],

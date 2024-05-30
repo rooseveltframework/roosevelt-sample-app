@@ -10,7 +10,7 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "roosevelt": "~0.21.0",
+    "roosevelt": "~0.22.0",
     "teddy": "~0.6.0",
     "less": "~4.2.0"
   },
@@ -34,6 +34,9 @@
   "scripts": {
     "audit-config": "node ./node_modules/roosevelt/lib/scripts/configAuditor.js",
     "generate-certs": "node ./node_modules/roosevelt/lib/scripts/certsGenerator.js",
+    "generate-session-secret": "node ./node_modules/roosevelt/lib/scripts/sessionSecretGenerator.js",
+    "generate-csrf-secret": "node ./node_modules/roosevelt/lib/scripts/csrfSecretGenerator.js",
+    "generate-secrets": "npm run generate-certs && npm run generate-session-secret && npm run generate-csrf-secret",
     "d": "nodemon app.js --development-mode",
     "dev": "nodemon app.js --development-mode",
     "development": "nodemon app.js --development-mode",
