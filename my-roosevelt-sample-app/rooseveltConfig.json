@@ -1,9 +1,9 @@
 {
-  "port": 4770,
+  "port": 53573,
   "makeBuildArtifacts": true,
   "https": {
     "enable": true,
-    "port": 4770,
+    "port": 53573,
     "force": true,
     "authInfoPath": {
       "authCertAndKey": {
@@ -34,7 +34,6 @@
       "bundles": [{
         "config": {
           "entry": "${js.sourcePath}/main.js",
-          "devtool": "source-map",
           "output": {
             "path": "${publicFolder}/js"
           },
