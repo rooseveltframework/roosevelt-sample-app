@@ -174,3 +174,6 @@ public
 
 # secrets directory
 secrets
+
+# session data
+sessions.sqlite*

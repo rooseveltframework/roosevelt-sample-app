@@ -15,15 +15,15 @@
     "less": "~4.2.0"
   },
   "devDependencies": {
-    "nodemon": "~3.0.0",
+    "nodemon": "~3.1.0",
     "standard": "~17.1.0",
-    "eslint-plugin-html": "~7.1.0",
-    "stylelint": "~15.11.0",
+    "eslint-plugin-html": "~8.1.0",
+    "stylelint": "~16.6.0",
     "postcss-less": "~6.0.0",
-    "stylelint-config-standard": "~34.0.0"
+    "stylelint-config-standard": "~36.0.0"
   },
   "nodemonConfig": {
-    "ignore": ["public/", "jsdoc/"],
+    "ignore": ["public/"],
     "ext": "less html js json"
   },
   "private": true,
