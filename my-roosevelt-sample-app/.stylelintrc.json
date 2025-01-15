@@ -1,6 +1,5 @@
 {
-  "customSyntax": "postcss-less",
-  "extends": "stylelint-config-standard",
+  "extends": "stylelint-config-standard-scss",
   "rules": {
     "selector-id-pattern": null,
     "selector-class-pattern": null,

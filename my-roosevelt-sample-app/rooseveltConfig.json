@@ -1,9 +1,9 @@
 {
-  "port": 53573,
+  "port": 36411,
   "makeBuildArtifacts": true,
   "https": {
     "enable": true,
-    "port": 53573,
+    "port": 36411,
     "force": true,
     "authInfoPath": {
       "authCertAndKey": {
@@ -21,7 +21,7 @@
     "sourcePath": "css",
     "compiler": {
       "enable": true,
-      "module": "less",
+      "module": "sass",
       "options": {}
     },
     "output": "css",

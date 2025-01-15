@@ -10,21 +10,20 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "roosevelt": "~0.22.0",
+    "roosevelt": "~0.23.0",
     "teddy": "~0.6.0",
-    "less": "~4.2.0"
+    "sass": "~1.83.0"
   },
   "devDependencies": {
     "nodemon": "~3.1.0",
     "standard": "~17.1.0",
     "eslint-plugin-html": "~8.1.0",
-    "stylelint": "~16.6.0",
-    "postcss-less": "~6.0.0",
-    "stylelint-config-standard": "~36.0.0"
+    "stylelint": "~16.13.0",
+    "stylelint-config-standard-scss": "~14.0.0"
   },
   "nodemonConfig": {
     "ignore": ["public/"],
-    "ext": "less html js json"
+    "ext": "scss html js json"
   },
   "private": true,
   "repository": {
@@ -49,7 +48,7 @@
     "production-proxy": "nodemon app.js --production-proxy-mode",
     "standard": "./node_modules/.bin/standard",
     "start": "nodemon app.js --production-mode",
-    "stylelint": "./node_modules/.bin/stylelint \"statics/css/**/*.less\"",
+    "stylelint": "./node_modules/.bin/stylelint \"statics/css/**/*.scss\"",
     "test": "npm run lint"
   }
 }
