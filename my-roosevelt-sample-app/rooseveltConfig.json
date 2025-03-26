@@ -1,22 +1,21 @@
 {
-  "port": 36411,
   "makeBuildArtifacts": true,
+  "http": {
+    "enable": false
+  },
   "https": {
     "enable": true,
-    "port": 36411,
-    "force": true,
-    "authInfoPath": {
-      "authCertAndKey": {
-        "cert": "cert.pem",
-        "key": "key.pem"
-      }
+    "port": 16414,
+    "options": {
+      "cert": "cert.pem",
+      "key": "key.pem"
     }
   },
-  "secretsDir": "secrets",
-  "modelsPath": "mvc/models",
-  "viewsPath": "mvc/views",
-  "viewEngine": ["html:teddy"],
-  "controllersPath": "mvc/controllers",
+  "secretsPath": "secrets",
+  "favicon": "images/favicon.ico",
+  "viewEngine": [
+    "html:teddy"
+  ],
   "css": {
     "sourcePath": "css",
     "compiler": {
@@ -31,26 +30,34 @@
     "sourcePath": "js",
     "webpack": {
       "enable": true,
-      "bundles": [{
-        "config": {
-          "entry": "${js.sourcePath}/main.js",
-          "output": {
-            "path": "${publicFolder}/js"
-          },
-          "resolve": {
-            "alias": {
-              "fs": false,
-              "path": false
+      "bundles": [
+        {
+          "config": {
+            "entry": "${js.sourcePath}/main.js",
+            "output": {
+              "path": "${publicFolder}/js"
             },
-            "modules": ["${js.sourcePath}", "${publicFolder}/js", "${appDir}", "node_modules"]
+            "resolve": {
+              "alias": {
+                "fs": false,
+                "path": false
+              },
+              "modules": [
+                "${js.sourcePath}",
+                "${buildFolder}/js",
+                "${appDir}",
+                "node_modules"
+              ]
+            }
           }
         }
-      }]
+      ]
     }
   },
-  "favicon": "images/favicon.ico",
-  "symlinks": [{
-    "source": "${staticsRoot}/images",
-    "dest": "${publicFolder}/images"
-  }]
+  "symlinks": [
+    {
+      "source": "${staticsRoot}/images",
+      "dest": "${publicFolder}/images"
+    }
+  ]
 }

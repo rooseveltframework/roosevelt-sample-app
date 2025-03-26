@@ -169,12 +169,8 @@ dist/
 tmp/
 temp/
 
-### Roosevelt ###
-# Public directory
+# Roosevelt
+.build
 public
-
-# secrets directory
 secrets
-
-# session data
 sessions.sqlite*
