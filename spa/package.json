@@ -1,0 +1,63 @@
+{
+  "name": "my-roosevelt-sample-app",
+  "description": "",
+  "version": "0.1.0",
+  "author": "",
+  "license": "",
+  "homepage": "",
+  "main": "app.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "check-if-css-is-disabled": "~2.0.0",
+    "roosevelt": "~0.30.0",
+    "sass": "~1.86.0",
+    "semantic-forms": "~5.0.0",
+    "single-page-express": "~2.0.0",
+    "teddy": "~1.0.0",
+    "webpack": "~5.98.0"
+  },
+  "devDependencies": {
+    "nodemon": "~3.1.0",
+    "standard": "~17.1.0",
+    "stylelint": "~16.17.0",
+    "stylelint-config-standard-scss": "~14.0.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "public/"
+    ],
+    "ext": "scss html js json"
+  },
+  "standard": {
+    "ignore": [
+      "public/"
+    ]
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://somewhere.url/user/repo.git"
+  },
+  "scripts": {
+    "generate-secrets": "node ./node_modules/roosevelt/lib/scripts/secretsGenerator.js",
+    "generate-certs": "node ./node_modules/roosevelt/lib/scripts/certsGenerator.js",
+    "generate-session-secret": "node ./node_modules/roosevelt/lib/scripts/sessionSecretGenerator.js",
+    "generate-csrf-secret": "node ./node_modules/roosevelt/lib/scripts/csrfSecretGenerator.js",
+    "d": "nodemon app.js --development-mode",
+    "dev": "nodemon app.js --development-mode",
+    "development": "nodemon app.js --development-mode",
+    "p": "nodemon app.js --production-mode",
+    "prod": "nodemon app.js --production-mode",
+    "production": "nodemon app.js --production-mode",
+    "x": "nodemon app.js --production-proxy-mode",
+    "prodproxy": "nodemon app.js --production-proxy-mode",
+    "production-proxy": "nodemon app.js --production-proxy-mode",
+    "lint": "npm run standard && npm run stylelint",
+    "standard": "./node_modules/.bin/standard",
+    "stylelint": "./node_modules/.bin/stylelint \"statics/css/**/*.scss\"",
+    "start": "nodemon app.js --production-mode",
+    "test": "npm run lint"
+  }
+}

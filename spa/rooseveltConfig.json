@@ -5,7 +5,7 @@
   },
   "https": {
     "enable": true,
-    "port": 59782,
+    "port": 17021,
     "options": {
       "cert": "cert.pem",
       "key": "key.pem"
@@ -49,12 +49,39 @@
                 "${js.sourcePath}",
                 "${buildFolder}/js",
                 "${appDir}",
-                "node_modules"
+                "node_modules",
+                "mvc/controllers"
               ]
             }
           }
         }
       ]
+    }
+  },
+  "clientControllers": {
+    "enable": true,
+    "exposeAll": true,
+    "blocklist": [
+      "server/*"
+    ],
+    "allowlist": [],
+    "defaultBundle": "controllers.js",
+    "output": "js"
+  },
+  "clientViews": {
+    "enable": true,
+    "exposeAll": true,
+    "blocklist": [
+      "robots.txt"
+    ],
+    "allowlist": [],
+    "defaultBundle": "views.js",
+    "output": "js",
+    "minify": true,
+    "minifyOptions": {
+      "caseSensitive": true,
+      "collapseWhitespace": true,
+      "removeAttributeQuotes": false
     }
   },
   "symlinks": [
