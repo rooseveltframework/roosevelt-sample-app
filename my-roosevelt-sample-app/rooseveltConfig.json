@@ -5,7 +5,7 @@
   },
   "https": {
     "enable": true,
-    "port": 16414,
+    "port": 59782,
     "options": {
       "cert": "cert.pem",
       "key": "key.pem"
@@ -13,6 +13,9 @@
   },
   "secretsPath": "secrets",
   "favicon": "images/favicon.ico",
+  "modelsPath": "mvc/models",
+  "viewsPath": "mvc/views",
+  "controllersPath": "mvc/controllers",
   "viewEngine": [
     "html:teddy"
   ],
