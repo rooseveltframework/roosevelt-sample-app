@@ -1,0 +1,16 @@
+@use "helpers";
+
+/* global styles */
+
+@view-transition { /* enable multi-page view transitions */
+  navigation: auto;
+}
+
+body {
+  font-family: sans-serif;
+  color: #100;
+}
+
+img {
+  border: 5px #000 dotted;
+}
