@@ -2,7 +2,7 @@
 
 This repo contains the default output for the latest version of the [mkroosevelt](https://github.com/rooseveltframework/mkroosevelt) app generator for [Roosevelt](https://github.com/rooseveltframework/roosevelt). You can use this repo to make a new Roosevelt app without using the generator, or you can use this repo to see how the default sample app changes over time from version to version, which is useful information to know when upgrading your Roosevelt app from one version of Roosevelt to another.
 
-Upgrading the sample app from old versions to new verisons:
+Upgrading the sample app from old versions to new versions:
 
 - Upgrading from [0.29.4 to 0.30.5](https://github.com/rooseveltframework/roosevelt-sample-app/commit/0663e01601e9b17792a5a453a18ff3786c48a2b9).
 - Upgrading from [0.23.2 to 0.29.4](https://github.com/rooseveltframework/roosevelt-sample-app/commit/c703ef9061ac6922cd8bf8ee91a7ee0761bdbeb7).
