@@ -4,7 +4,7 @@ This repo contains the default output for the latest version of the [mkroosevelt
 
 Upgrading the sample app from old versions to new versions:
 
-- Upgrading from [0.33.2 to 0.34.1](https://github.com/rooseveltframework/roosevelt-sample-app/commit/d76b9b863ac6afab87bd6db468660b34c255b94e)
+- Upgrading from [0.33.2 to 0.34.1](https://github.com/rooseveltframework/roosevelt-sample-app/commit/d76b9b863ac6afab87bd6db468660b34c255b94e).
 - Upgrading from [0.31.7 to 0.33.2](https://github.com/rooseveltframework/roosevelt-sample-app/commit/8852a296dd3e7a6be97ea7828043c8b85368acd3).
 - Upgrading from [0.30.5 to 0.31.7](https://github.com/rooseveltframework/roosevelt-sample-app/commit/d2fd19cdaa0a2c27324df47fdb5e4c20dd844099).
 - Upgrading from [0.29.4 to 0.30.5](https://github.com/rooseveltframework/roosevelt-sample-app/commit/0663e01601e9b17792a5a453a18ff3786c48a2b9).
